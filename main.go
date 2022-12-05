@@ -69,7 +69,7 @@ func main() {
 		log.Fatalf("Couldn't load .env file: %v", err)
 	}
 
-	discord, err := discordgo.New("Bot" + "MTA0NzI2MTAzNDM0NTQwNjQ3NA.GUxACB.qt-P2SOzI5WeO3Phm4psJ7-bMULlLDSP4xjNn8")
+	discord, err := discordgo.New("Bot" + os.Getenv("TOKEN"))
 	if err != nil {
 		log.Fatalf("Couldn't Start Discord Bot %w", err)
 	}
