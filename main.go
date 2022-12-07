@@ -18,7 +18,7 @@ import (
 
 func main() {
 	runOptions := playwright.RunOptions{
-		Browsers: []string{"chromium"},
+		Browsers: []string{"chrome"},
 		Verbose:  false,
 	}
 	err := playwright.Install(&runOptions)
